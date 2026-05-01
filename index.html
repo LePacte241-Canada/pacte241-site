@@ -4,37 +4,219 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PACTE241</title>
+
 <meta name="description" content="PACTE241 - Initiative citoyenne : du citoyen passif au citoyen acteur du changement.">
+
 <style>
-/* Votre CSS existant + ajouts */
-body { margin:0; font-family:Arial,sans-serif; color:#222; background:#fff; }
-.hero{ height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; color:white; position:relative; overflow:hidden; padding:20px; background:#000; }
-.hero-bg{ position:absolute; top:0; left:0; width:100%; height:100%; z-index:0; }
-.hero-bg svg{ opacity:0.9; display:block; }
-.hero-content{ position:relative; z-index:1; max-width:800px; text-align:center; bottom:20%; left:50%; transform:translateX(-50%); }
-.btn{ display:inline-block; margin:10px; padding:14px 20px; border-radius:6px; text-decoration:none; font-weight:bold; }
-.primary{ background:#0a5c36; color:#fff; }
-section{ padding:60px 20px; max-width:1000px; margin:auto; }
-.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px; }
-.card{ padding:20px; border:1px solid #eee; border-radius:10px; background:#fafafa; }
-.donate{ background:#0a5c36; color:white; text-align:center; padding:70px 20px; }
-footer{ background:#111; color:white; text-align:center; padding:25px; }
+
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  color:#222;
+  background:#fff;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('images/couverture-pacte241.jpg') center/cover;
+  padding:20px;
+}
+
+.logo{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid white;
+  margin-bottom:15px;
+}
+
+h1{
+  font-size:2.5em;
+  margin-bottom:10px;
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  margin:10px;
+  padding:14px 20px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.primary{background:#0a5c36;color:#fff;}
+.secondary{border:2px solid #fff;color:#fff;}
+
+/* SECTIONS */
+section{
+  padding:60px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+
+.card{
+  padding:20px;
+  border:1px solid #eee;
+  border-radius:10px;
+  background:#fafafa;
+}
+
+/* DON */
+.donate{
+  background:#0a5c36;
+  color:white;
+  text-align:center;
+  padding:70px 20px;
+}
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+
 </style>
 </head>
 
 <body>
-<!-- HERO avec VOTRE SVG -->
+
+<!-- HERO -->
 <div class="hero">
-  <div class="hero-bg">
-    <a href="https://votre-lien-hero.com" target="_blank" rel="noopener noreferrer">
-      <svg width="100%" height="100%" viewBox="0 0 680 382" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-        <!-- COLLEZ ICI VOTRE SVG COMPLET -->
-      </svg>
-    </a>
-  </div>
-  <div class="hero-content">
+  <div>
+    <img src="images/logo-pacte241.jpg" class="logo" alt="Logo PACTE241">
+
+    <h1>Du citoyen passif au citoyen acteur</h1>
+
+    <p>PACTE241 transforme les communautés par l’action, la participation et la transmission.</p>
+
     <a class="btn primary" href="https://www.paypal.com/donate/YOUR-LINK" target="_blank">Faire un don</a>
+    <a class="btn secondary" href="#contact">Contact</a>
   </div>
+</div>
+
+<!-- PACTE -->
+<section>
+<h2>Le PACTE241</h2>
+<p>Une méthodologie citoyenne basée sur l’action collective et la structuration des initiatives locales.</p>
+</section>
+
+<!-- PILIERS -->
+<section>
+<h2>Nos piliers</h2>
+<div class="grid">
+  <div class="card">Participation</div>
+  <div class="card">Action</div>
+  <div class="card">Communauté</div>
+  <div class="card">Transmission</div>
+</div>
+</section>
+
+<!-- FONCTIONNEMENT -->
+<section>
+<h2>Fonctionnement</h2>
+<p>Observation → Mobilisation → Action → Transmission</p>
+</section>
+
+<!-- PROJETS -->
+<section>
+<h2>Projets</h2>
+
+<div class="grid">
+
+  <!-- SAUVONS LA PLANÈTE -->
+  <div class="card">
+    <strong>Sauvons la planète</strong>
+    <ul style="padding-left:18px;margin-top:10px;">
+      <li>
+        <a href="https://pacte241-littoral-sdigl.netlify.app/" target="_blank" style="text-decoration:none;color:inherit;">
+          Police des plages
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ÉDITIONS -->
+  <div class="card">
+    <strong>Éditions Florissa - Courtney</strong>
+    <ul style="padding-left:18px;margin-top:10px;">
+      <li>
+        <a href="https://www.amazon.ca/-/fr/Collection-PACTE-241-5%C2%A0s%C3%A9rie-de-livres/dp/B0GNDK522D"
+           target="_blank"
+           style="text-decoration:none;color:inherit;">
+          Collection PACTE 241
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- AJDE -->
+  <div class="card">
+    <strong>Association Jeunes et Développement d'Essassa (AJDE)</strong>
+
+    <ul style="padding-left:18px;margin-top:10px;">
+
+      <li>
+        <a href="https://youtu.be/eNzEl03dNlY?si=20aRZ8F8EeiLHPP7"
+           target="_blank"
+           style="text-decoration:none;color:inherit;">
+          GOME
+        </a>
+      </li>
+
+      <li>
+        <a href="https://drive.google.com/file/d/1CxbIWSH_kP6d403yBRaqI1i0rwOT9xra/view?usp=drivesdk"
+           target="_blank"
+           style="text-decoration:none;color:inherit;">
+          CMC Essassa 23
+        </a>
+
+        <div style="font-size:11px;color:#0a5c36;margin-top:3px;">
+          (Statut : projet aujourd’hui fermé – présenté ici à titre d’archive.)
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+</div>
+</section>
+
+<!-- DON -->
+<div class="donate">
+<h2>Soutenir le PACTE241</h2>
+<p>Votre contribution permet de soutenir des actions citoyennes concrètes.</p>
+<a class="btn secondary" href="https://www.paypal.com/donate/YOUR-LINK" target="_blank">Faire un don</a>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+<p>Email : contact@lepacte241.ca</p>
+<p>Montréal, Canada</p>
+</section>
+
+<footer>
+PACTE241 © 2026
+</footer>
+
+</body>
+</html>  </div>
 </div>
 
 <!-- RESTE DU SITE IDENTIQUE -->
