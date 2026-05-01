@@ -4,37 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PACTE241</title>
-
 <meta name="description" content="PACTE241 - Initiative citoyenne : du citoyen passif au citoyen acteur du changement.">
-
 <style>
+/* Votre CSS existant + ajouts */
+body { margin:0; font-family:Arial,sans-serif; color:#222; background:#fff; }
+.hero{ height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; color:white; position:relative; overflow:hidden; padding:20px; background:#000; }
+.hero-bg{ position:absolute; top:0; left:0; width:100%; height:100%; z-index:0; }
+.hero-bg svg{ opacity:0.9; display:block; }
+.hero-content{ position:relative; z-index:1; max-width:800px; text-align:center; bottom:20%; left:50%; transform:translateX(-50%); }
+.btn{ display:inline-block; margin:10px; padding:14px 20px; border-radius:6px; text-decoration:none; font-weight:bold; }
+.primary{ background:#0a5c36; color:#fff; }
+section{ padding:60px 20px; max-width:1000px; margin:auto; }
+.grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px; }
+.card{ padding:20px; border:1px solid #eee; border-radius:10px; background:#fafafa; }
+.donate{ background:#0a5c36; color:white; text-align:center; padding:70px 20px; }
+footer{ background:#111; color:white; text-align:center; padding:25px; }
+</style>
+</head>
 
-body {
-  margin:0;
-  font-family:Arial,sans-serif;
-  color:#222;
-  background:#fff;
-}
+<body>
+<!-- HERO avec VOTRE SVG -->
+<div class="hero">
+  <div class="hero-bg">
+    <a href="https://votre-lien-hero.com" target="_blank" rel="noopener noreferrer">
+      <svg width="100%" height="100%" viewBox="0 0 680 382" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <!-- COLLEZ ICI VOTRE SVG COMPLET -->
+      </svg>
+    </a>
+  </div>
+  <div class="hero-content">
+    <a class="btn primary" href="https://www.paypal.com/donate/YOUR-LINK" target="_blank">Faire un don</a>
+  </div>
+</div>
 
-/* HERO */
-.hero{
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:white;
-  position:relative;
-  overflow:hidden;
-  padding:20px;
-  background:#000;
-}
+<!-- RESTE DU SITE IDENTIQUE -->
+<section><h2>Le PACTE241</h2><p>Une méthodologie...</p></section>
+<!-- ... tout votre contenu existant ... -->
 
-.hero-bg{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
+<footer>PACTE241 © 2026</footer>
+</body>
+</html>  width:100%;
   height:100%;
   z-index:0;
 }
